@@ -1,4 +1,3 @@
-
 #How to use
 
 ##Get the Neural Net:
