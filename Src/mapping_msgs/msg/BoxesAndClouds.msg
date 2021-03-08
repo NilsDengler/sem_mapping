@@ -1,0 +1,3 @@
+BoundingBoxes bounding_boxes
+sensor_msgs/PointCloud2 point_cloud
+rosgraph_msgs/Clock clock

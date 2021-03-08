@@ -1,0 +1,18 @@
+<launch>
+	<node pkg= "tensorflow_object_detector" name="detect_ros" type="detect_ros.py"  output="screen"> 
+        <!--<remap from='image' to='/sensorring_cam3d/rgb/image_raw'/>-->
+    <!--<remap from='image' to='/sensorring_cam3d/rgb/image_rect_color'/>-->
+    <!--<remap from='image' to='/camera/rgb/image_raw'/>-->
+    <!--<remap from='points' to='/camera/depth/points'/>-->
+    <remap from='image' to='/hsrb/head_rgbd_sensor/rgb/image_rect_color/compressed'/>
+    <!--<remap from='image' to='/hsrb/head_rgbd_sensor/rgb/image_rect_color'/>-->
+    <remap from='points' to='/hsrb/head_rgbd_sensor/depth_registered/depth_rectified_points'/>
+    
+    <!--<remap from='points' to='/sensorring_cam3d/depth/points'/>-->
+	<param name="compressed" value="false" />
+	</node>
+	<!-- rviz
+  <arg name ="rviz" default="true" />
+  <arg name ="rviz_file" default="$(find tensorflow_object_detector)/config/display.rviz"/>
+	<node pkg ="rviz" type="rviz" name="rviz" output="screen" args= "-d $(arg rviz_file)" if="$(arg rviz)"/>-->
+</launch>
