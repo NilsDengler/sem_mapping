@@ -1,3 +1,7 @@
+
+Object-Oriented Semantic Mapping
+This repository contains the accompanying code for the paper Online Object-Oriented Semantic Mapping and Map Updating by N. Dengler and T. Zaenker and F. Verdoja and M. Bennewitz accepted at EMCR, 2021. you can find the paper at https://arxiv.org/pdf/2011.06895.pdf
+
 # How to use
 
 ## Get the Neural Net:
@@ -30,9 +34,10 @@ important Params are:
 ## Citation:
 Please cite this work as:
 
-@article{dengler2020online,
-  title={Online Object-Oriented Semantic Mapping and Map Updating with Modular Representations},
-  author={Dengler, Nils and Zaenker, Tobias and Verdoja, Francesco and Bennewitz, Maren},
-  journal={arXiv preprint arXiv:2011.06895},
-  year={2020}
+@InProceedings{Dengler21ecmr,
+  author =	 {N. Dengler and T. Zaenker and F. Verdoja and M. Bennewitz},
+  title =	 {Online Object-Oriented Semantic Mapping and Map Updating},
+  booktitle =	 {Proc.~of the European Conference on Mobile Robots (ECMR)},
+  year =         2021
 }
+
